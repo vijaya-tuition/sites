@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bright Future Tuition Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container" role="banner">
+      <div class="logo" aria-label="Bright Future Tuition Centre Logo">Vijaya Tuitions</div>
+      <nav role="navigation" aria-label="Primary site navigation">
+        <a href="#home" tabindex="0">Home</a>
+        <a href="#courses" tabindex="0">Courses</a>
+        <a href="#about" tabindex="0">About</a>
+        <a href="#contact" tabindex="0">Contact</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">&#9776;</button>
+    </div>
+    <nav id="mobile-menu" class="nav-mobile" role="navigation" aria-label="Mobile site navigation">
+      <a href="#home" tabindex="0">Home</a>
+      <a href="#courses" tabindex="0">Courses</a>
+      <a href="#about" tabindex="0">About</a>
+      <a href="#contact" tabindex="0">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home" tabindex="-1">
+    <h1>Welcome to Vijaya Tuition Centre</h1>
+    <p>Your pathway to success starts here. Expert tutoring for all classes and subjects.</p>
+    <button class="btn-primary" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Enroll Now</button>
+  </section>
+
+  <main>
+    <section id="courses" aria-labelledby="courses-title">
+      <h2 class="section-title" id="courses-title">Courses We Offer</h2>
+      <div class="courses-grid">
+        <article class="course-card" tabindex="0" aria-label="Mathematics course">
+          <span class="course-icon material-icons" aria-hidden="true">calculate</span>
+          <h3 class="course-title">Tuition for 1-10<sup>th<sup>  <br>for all State board,ICSE and CBSE</h3>
+          <p class="course-description">Comprehensive tutoring from basics to advanced.<br>Concept based learning with simple and effective learning methods.</p>
+          <p class="course-schedule" aria-label="Course schedule">Monday-Saturday</p>
+        </article>
+        <article class="course-card" tabindex="0" aria-label="Science course">
+          <span class="course-icon material-icons" aria-hidden="true">science</span>
+          <h3 class="course-title">Navodaya Coaching</h3>
+          <p class="course-description">Get the Best preparation to crack JNV entrance<br> Regular tests and performance analysis</p>
+          <p class="course-schedule" aria-label="Course schedule">Monday-Saturday</p>
+        </article>
+        <article class="course-card" tabindex="0" aria-label="English course">
+          <span class="course-icon material-icons" aria-hidden="true">menu_book</span>
+          <h3 class="course-title">Intermediate</h3>
+          <p class="course-description">Special care taken in teaching Maths and Chemistry</p>
+          <p class="course-schedule" aria-label="Course schedule">Monday-Saturday</p>
+        </article>
+        <article class="course-card" tabindex="0" aria-label="Computer Science course">
+          <span class="course-icon material-icons" aria-hidden="true">computer</span>
+          <h3 class="course-title">Other Competitive exams</h3>
+          <p class="course-description">Coaching for your Specific exams will also be given </p>
+          <p class="course-schedule" aria-label="Course schedule">Monday-Saturday</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About Us</h2>
+      <p style="max-width: 650px; margin: 0 auto 2rem; font-size: 1.1rem; color: #4b4b4b; user-select:none;">
+        Vijaya Tuition Centre is committed to providing personalized and effective education services from the past 20 years. We help students build confidence and achieve excellence across a variety of subjects.
+      </p>
+    </section>
+<section id="slider" aria-labelledby="slider-title">
+      <h2 class="section-title" id="slider-title">Our Gallery</h2>
+      <div class="slider">
+        <div class="slides">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO8SnZzcEIr71mZUSPJi9CV79PtvzQYSRHlFMYK=s1360-w1360-h1020-rw" alt="Description of image 1" class="slide" />
+          <img src="https://ik.imagekit.io/a6foktcqp/WhatsApp%20Image%202025-06-15%20at%2014.56.47_133d9348.jpg?updatedAt=1749980505996" alt="Description of image 2" class="slide" />
+          <img src="https://ik.imagekit.io/a6foktcqp/WhatsApp%20Image%202025-06-15%20at%2017.25.09_29cb7a58.jpg?updatedAt=1749988611164" alt="Description of image 3" class="slide" />
+<img src="https://ik.imagekit.io/a6foktcqp/WhatsApp%20Image%202025-06-15%20at%2017.23.16_c9c36869.jpg?updatedAt=1749988611263" alt="Description of image 4" class="slide" />
+
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact Us</h2>
+      <div class="contact-info" role="contentinfo">
+        <div class="contact-item"><span class="material-icons" aria-hidden="true">location_on</span>Opp St.Anns School,Tadepalligudem</div>
+<a href="https://g.co/kgs/cphPNvr">Map</a>
+        <div class="contact-item"><span class="material-icons" aria-hidden="true">phone</span><a href="tel:+1234567890" aria-label="Call us at 123 456 7890">9550936680</a></div>
+        <div class="contact-item"><span class="material-icons" aria-hidden="true">email</span><a href="mailto:info@brightfuturetuition.com" aria-label="Send email to info@brightfuturetuition.com">samyukthadeepika4@gmail.com</a></div>
+      </div>
+    </section>
+      <form id="contact-form" class="contact-form" aria-label="Contact form" onsubmit="handleSubmit(event)">
+<section id="contact" class="contact-section">
+       <div class="container">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSffgdW7j-oZ3mBRRIr8Wc0SX6CjxpO7KQ8FAXXbj9wJA5ux1A/viewform?embedded=true" 
+      width="100%" 
+      height="500" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </div>      <p id="form-status" role="alert" aria-live="polite" style="margin-top:1rem; text-align:center;"></p>
+    </section>
+</form>
+  </main>
+
+  <footer>
+    &copy; 2025 Vijaya Tuition Centre. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+</script>
+</body>
+</html>
